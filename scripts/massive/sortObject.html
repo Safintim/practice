@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!--	
+
+Напишите код, который отсортирует массив объектов people по полю age.
+
+-->
+	<script>
+	
+		var vasya = { name: "Вася", age: 23 };
+		var masha = { name: "Маша", age: 18 };
+		var vovochka = { name: "Вовочка", age: 6 };
+
+		var people = [ vasya , masha , vovochka ];
+		
+		function sortObject(a, b){
+			return a.age - b.age ;
+		}
+		people.sort(sortObject)
+		
+		console.log(people);
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

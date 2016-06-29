@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--
+   //1
+    У нас есть массив goods. Сколько в нем элементов — не знаем, но можем прочитать из goods.length.
+    Напишите код для получения последнего элемента goods.
+    //2
+    Напишите код для добавления в его конец значения «Компьютер».
+-->
+    <script>
+        function lastElem (array) {
+            //1
+            console.log( array[array.length - 1] );
+            //2
+            array.push('Computer') // array[array.length] = 'Компьютер'
+            console.log(array);
+        }
+        
+        var goods = [4,7,2,4,0, 5, 5, 7, 100, 88, 2, '23', 'timur'];
+        
+        lastElem(goods);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

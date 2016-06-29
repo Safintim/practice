@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--
+
+    checkSpam(str), которая возвращает true, если строка str содержит 'viagra' or 'XXX', а иначе false.
+    Функция должна быть нечувствительна к регистру   
+
+-->
+    <script>
+        
+        function checkSpam(str){
+        
+            var lowerStr = str.toLowerCase();
+            
+            return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

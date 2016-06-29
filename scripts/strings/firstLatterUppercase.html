@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--
+   
+    1. Сделать первую букву строки заглавной
+    2. Сделать первые буквы всех слов в строке заглавными 
+   
+-->
+
+    <script>
+        //1
+        function upFirstLatter(str){
+            
+            if(str){
+                return ( str.charAt(0).toUpperCase() + str.slice(1) );
+            } else{
+                return ("empty string");
+            }
+        }
+        
+        //2
+        function upFirstLatterAll(str){
+            var splitStr = str.split(' ');
+            for(var i = 0; i < splitStr.length; i++){
+                splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1);
+                
+            }
+            var result = splitStr.join(' ');
+            console.log(result);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

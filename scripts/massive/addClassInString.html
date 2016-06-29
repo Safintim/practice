@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    
+    В объекте есть свойство className, которое содержит список «классов» – слов, разделенных пробелом:
+    var obj = {
+      className: 'open menu'
+    }
+Создайте функцию addClass(obj, cls), которая добавляет в список класс cls, но только если его там еще нет:
+-->
+
+    <script>
+    
+        var obj = {
+            className: 'open menu'
+        };
+        
+        function addClass (obj, cls){
+            var arrObj = obj.className.split(' ');
+            for(var i = 0; i < arrObj.length; i++) {
+                
+                if(arrObj[i] === cls) {
+                    return;
+                }
+            }
+            arrObj.push(cls);
+            obj.className = arrObj.join(' ');
+            console.log(obj.className);
+        }
+        addClass(obj, 'new');
+        addClass(obj, 'open');
+        addClass(obj, 'me');
+        alert( obj.className );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!--    
+
+Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».
+То есть, дефисы удаляются, а все слова после них получают заглавную букву.
+
+-->
+
+	<script>
+
+		function camelize(str) {
+
+			var arrStr = str.split('-');
+			console.log(arrStr);
+				
+			for(var i = 1; i < arrStr.length; i++){
+			
+				arrStr[i] = arrStr[i].charAt(0).toUpperCase() + arrStr[i].slice(1);
+			
+			}
+				console.log(arrStr.join(''));
+		}
+
+camelize("background-color");
+camelize("list-style-image");
+camelize("-webkit-transition");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

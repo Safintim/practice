@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    
+    Задача из 5 шагов-строк:
+
+    Создайте массив styles с элементами «Джаз», «Блюз».
+    Добавьте в конец значение «Рок-н-Ролл»
+    Замените предпоследнее значение с конца на «Классика». Код замены предпоследнего значения должен работать для массивов любой длины.
+    Удалите первое значение массива и выведите его alert.
+    Добавьте в начало значения «Рэп» и «Регги».
+    
+    
+    Напишите код для вывода alert случайного значения из массива:
+    var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+    Код для генерации случайного целого от min to max включительно:
+    var rand = min + Math.floor(Math.random() * (max + 1 - min));
+-->
+
+    <script>
+        var styles = ['Джаз', 'Блюз'];
+        console.log(styles);
+        
+        styles.push('Рок-н-Ролл');  
+//        console.log(styles);
+        
+        styles[styles.length - 2] = 'Классика';
+//        console.log(styles);
+        
+//        alert( styles.shift() );
+//        console.log(styles);
+        
+        styles.unshift('Рэп', 'Регги');
+//        console.log(styles);
+        
+        //2 
+        function getRandom (min, max){
+            return min + Math.floor(Math.random() * (max + 1 - min));
+        }
+        
+        var rand = getRandom(0,3);
+        
+        var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+        
+        alert(arr[rand]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

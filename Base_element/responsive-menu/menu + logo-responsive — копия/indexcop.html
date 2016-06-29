@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<header>
+			<div id="header">
+                <div class="mid clearfix">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <a href="#" id="touch-menu">Меню</a>
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="#">Intro</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+		</header>
+	</main>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script>
+            $(document).ready(function(){
+                var touch = $('#touch-menu');
+                var menu = $('.nav');
+             
+                $(touch).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+                $(window).resize(function(){
+                    var wid = $(window).width();
+                    if(wid > 760 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

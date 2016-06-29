@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!--	
+Задачи:
+
+Напишите функцию printList(list), которая выводит элементы списка по очереди, при помощи цикла.
+Напишите функцию printList(list) при помощи рекурсии.
+Напишите функцию printReverseList(list), которая выводит элементы списка в обратном порядке, при помощи рекурсии. Для списка выше она должна выводить 4,3,2,1
+Сделайте вариант printReverseList(list), использующий не рекурсию, а цикл.
+-->
+	<script>
+		//1
+		function printList(list){
+		
+			var tmp = list;
+			while(tmp){
+				console.log(tmp.value);
+				tmp = tmp.next;
+			}
+		
+		}
+		//2
+		function printList(list){
+			console.log(list.value);
+			
+			if(list.value){
+				printList(list.next);
+			}
+		}
+		//3
+		function printReverseList(list) {
+
+			if (list.next) {
+				printReverseList(list.next);
+			}
+
+			alert( list.value );
+		}
+		//4
+		function printReverseList(list) {
+			var arr = [];
+			var tmp = list;
+
+			while (tmp) {
+				arr.push(tmp.value);
+				tmp = tmp.next;
+			}
+
+			for (var i = arr.length - 1; i >= 0; i--) {
+				alert( arr[i] );
+			}
+		}
+		
+		
+		var list = { value: 1 };
+		list.next = { value: 2 };
+		list.next.next = { value: 3 };
+		list.next.next.next = { value: 4 };
+		
+		var keys = Object.keys(list);
+		console.log(keys);
+		
+		
+		printList(list);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

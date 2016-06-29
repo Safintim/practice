@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// 1
+		// function Box (height, width, depth, material) {
+		// 	this.height = height;
+		// 	this.width = width;
+		// 	this.depth = depth;
+		// 	this.material = material;
+		// }
+
+		// Box.prototype.volume = function() {
+		// 	return ( this.width * this.height * this.depth );
+		// };
+		// Box.prototype.equals = function(object) {
+		// 	return ( this.material === object.material );
+		// };
+
+		// var box1 = new Box(10, 10, 10, "пластилин");
+		// var box2 = new Box(11, 13, 12, "пластилин");
+
+		// console.log(box1.volume());
+		// console.log(box2.volume());
+		// console.log(box1.equals(box2));
+
+		//2
+
+		// function Lego (name){
+		// 	this.name = name;
+		// 	this.entrance = function(){};
+		// }
+
+		// Lego.prototype.password = password;
+		// Lego.prototype.exit = function(){
+		// 	return ...
+		// };
+
+		//3 сравнение объектов , сортировка массива объектов 
+		// var Human = function(age, name){
+		// 	this.age = age;
+		// 	this.name = name;
+		// },
+		// 	arrayObject = [],
+		// 	getRandom = function(max, min){
+		// 		return  Math.floor(Math.random() * (max - min) + min);
+		// 	}
+
+		// function compareTo (personA, personB) {
+		// 	return ( personA.age - personB.age );
+		// }
+		
+		// for (var i = 0 ; i < 10; i++) {
+
+		// 	var age = getRandom(1, 80);
+			
+		// 	arrayObject[i] = new Human(age);
+
+		// };
+		// console.log(arrayObject);
+		
+		// arrayObject.sort(compareTo);
+		
+		// for(var i = 0; i < arrayObject.length; i++){
+		// 	console.log(arrayObject[i].age);
+		// }
+		
+		//4
+		
+		// function Human (name, legs, mood) {
+			
+		// 	this.name = name;
+		// 	this.legs = legs;
+			
+		// 	this.toGo = function (){
+		// 		if ( this.legs >= 2 ){
+		// 			return (this.name + "can walk!");
+		// 		} else if(this.legs < 2){
+		// 			return ("I'm sorry(");
+		// 		} else {
+		// 			return ("wow ! you're a mutant!");
+		// 		}
+		// 	};
+			
+		// 	this.moodDefin = function () {
+				
+		// 		if (mood === "nice"){
+		// 			return ("Hi friend");
+		// 		} else if (mood === "bad") {
+		// 			return ("horror!");
+		// 		} else{
+		// 			return ("bye(");
+		// 		}
+		// 	};
+			
+		// }
+		
+		// Human.prototype.work = true;
+		// Human.prototype.talk = function () {
+		// 	return ("Hi?, my name is" + this.name + "and my mood is" + this.mood);
+		// };
+		
+		// var ravil = new Human("Ravil", 2, "nice");
+		// var serg = new Human("Серега", 1, "bad");
+		// console.log("Ravil -" + ravil.name);
+		// console.log(ravil.toGo());
+		// console.log(ravil.moodDefin());
+		// console.log(ravil.work);
+		// console.log(ravil.talk());
+		
+		//5
+		// function Box (width, height, depth) {
+		// 	this.width = width;
+		// 	this.height = height;
+		// 	this.depth = depth;
+		// }
+		
+		// Box.prototype.getVolume = function () {
+		// 	return ( this.width * this.height * this.depth );
+		// };
+		
+		// Box.prototype.valueOf = function () {
+		// 	return this.getVolume();
+		// };
+		// Box.prototype.toString = function () {
+		// 	return "privet";
+		// };
+		
+		// var box1 = new Box(2, 4, 10);
+		// var box2 = new Box(4, 1, 14);
+		
+		// console.log(box1 + "");
+		// console.log(box2 + "");
+		
+        function getRandom(min , max){
+            return Math.floor ( Math.random() * (max + 1 - min) + min );
+        }
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

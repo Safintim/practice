@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<!--
+Есть объект salaries с зарплатами. Напишите код, который выведет имя сотрудника, у которого самая большая зарплата.
+Если объект пустой, то пусть он выводит «нет сотрудников».
+-->
+    
+    <script>
+        "use strict";
+
+        var salaries = {
+          "Вася": 100,
+          "Петя": 300,
+          "Даша": 250
+        },
+            sumSalary = 0;
+        
+        var max = 0;
+        var maxName = "";
+        
+        for (var name in salaries) {
+            
+          if (max < salaries[name]) {
+              
+            max = salaries[name];
+            maxName = name;
+              
+          }
+            
+        }
+
+        alert( maxName || "нет сотрудников" );
+        
+        
+        
+    </script>
+    
+<!--Создайте функцию multiplyNumeric, которая получает объект и умножает все численные свойства на 2-->
+
+    <script>
+        var menu = {
+          width: 200,
+          height: 300,
+          title: "My menu"
+        };
+        
+        function isNumeric(n) {
+          return !isNaN(parseFloat(n)) && isFinite(n)
+        }
+        function multiplyNumeric(object){
+            
+            for( var key in object){
+                if(isNumeric(object[key])){
+                    object[key] *= 2;
+                }
+            }
+            
+            console.log( object);
+        }
+        
+        multiplyNumeric(menu);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+

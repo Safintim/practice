@@ -1,0 +1,43 @@
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    overflow: hidden;
+}
+.accordeon {
+    width: 300px;
+    margin: 100px;
+}
+
+.accordeon__trigger {
+    text-decoration: none;
+    color:#333;
+    background-color: #f5f5f5;
+    display: block;
+    padding: 6px;
+    border: 1px solid #ddd;
+}
+.accordeon__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.accordeon__inner {
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: none;
+}
+.accordeon__item{
+    margin-bottom: 10px;
+}
+.accordeon__inner-item {
+    list-style: disc;
+    margin: 0 0 2px 0;
+}
+.accordeon__inner-link {
+    text-decoration: none;
+    color: #34495e;
+    border-bottom: 1px solid #34495e;
+}
+

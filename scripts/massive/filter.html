@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    
+    Создайте функцию filterRange(arr, a, b), которая принимает массив чисел arr и возвращает новый массив, который содержит только числа из arr из диапазона от a до b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. Функция не должна менять arr
+-->
+    <script>
+    
+        function filterRange(arr, a, b){
+            
+            
+            for( var i = 0; i < arr.length; i++ ){
+								var resultArr = arr[i];
+                if ( resultArr > a && resultArr < b){
+                    arr.splice(i,1);
+										i--;
+                }
+            }
+						
+            console.log(arr);
+        }    
+        
+       var arr = [5, 3, 8, 1];
+
+			filterRange(arr, 1, 4);
+			
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

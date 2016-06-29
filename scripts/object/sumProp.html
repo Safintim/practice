@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<!--
+    Есть объект salaries с зарплатами. Напишите код, который выведет сумму всех зарплат. Если объект пустой, то результат должен быть 0.
+-->
+    
+    <script>
+        "use strict";
+
+        var salaries = {
+          "Вася": 100,
+          "Петя": 300,
+          "Даша": 250
+        },
+            sumSalary = 0;
+        
+        for( var key in salaries){
+            sumSalary += salaries[key];
+        }
+        
+        console.log(sumSalary);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
